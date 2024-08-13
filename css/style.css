@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  font-family: cairo;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: indigo;
+  height: 110px;
+  font-size: 25px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header div p {
+  color: white;
+  margin-bottom: 10px;
+}
+header div select {
+  border-radius: 50px;
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  color: indigo;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+header button {
+  border-radius: 50px;
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  color: indigo;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 60px;
+  color: white;
+  padding-bottom: 193px;
+  background-color: rgb(218, 177, 250);
+}
+main .day-and-date {
+  border-radius: 30px;
+  height: 50px;
+  width: 240px;
+  background-color: white;
+  color: indigo;
+  font-size: 22px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 10px;
+}
+main .prayer-times {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .prayer-times .prayer-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: indigo;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: indigo;
+  color: white;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  header div select {
+    width: 100px;
+  }
+  header button {
+    width: 100px;
+  }
+  .prayer-times {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .prayer-times .prayer-time {
+    width: 300px;
+    height: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

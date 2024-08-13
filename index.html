@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="country">
+        
+        <select name="country" id="country-select">
+          <option value="">البلد</option>
+          <option value="Jordan">الأردن</option>
+          <option value="palestine">فلسطين</option>
+          <option value="Syria">سوريا</option>
+          <option value="Lebanon">لبنان</option>
+        </select>
+      </div>
+
+      <div class="city">
+        
+        <select name="city" id="city-select">
+          <option value="">المدينة</option>
+          <option value="Amman">عمان</option>
+          <option value="jerusalem">القدس</option>
+          <option value="Gaza">غزة</option>
+          <option value="Damascus">دمشق</option>
+          <option value="Beirut">بيروت</option>
+        </select>
+      </div>
+
+      <button id="search">بحث</button>
+    </header>
+
+    <main>
+      <div class="day-and-date">
+        <p id="day">اليوم والتاريخ</p>
+        <p id="date"></p>
+      </div>
+
+      <div class="prayer-times">
+        <div class="prayer-time">
+          <p>الفجر</p>
+          <p id="fajir"></p>
+        </div>
+        <div class="prayer-time">
+          <p>الشروق</p>
+          <p id="sunrise"></p>
+        </div>
+        <div class="prayer-time">
+          <p>الظهر</p>
+          <p id="duhur"></p>
+        </div>
+        <div class="prayer-time">
+          <p>العصر</p>
+          <p id="asr"></p>
+        </div>
+        <div class="prayer-time">
+          <p>المغرب</p>
+          <p id="maghrib"></p>
+        </div>
+        <div class="prayer-time">
+          <p>العشاء</p>
+          <p id="isha"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Built by Mohammad Nofal &copy; 2024</p>
+    </footer>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./node_modules/moment/dist/moment.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
